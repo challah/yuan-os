@@ -449,7 +449,7 @@ ul.tree-view details[open] > summary:before {
 
 .time {
   background-color: #dbbdcf;
-  color: white;
+  color: #010101;
   position: fixed;
   bottom: 2px;
   right: 2px;
