@@ -30,6 +30,8 @@ let drawing = function ($_p) {
     '#FF8040'
   ];
 
+  let paletteColour = 0;
+
   $_p.setup = function () {
     let canvas = $_p.createCanvas(400, 400);
     canvas.parent('p5-container');
@@ -48,11 +50,14 @@ let drawing = function ($_p) {
       }
     }
     $_p.noStroke();
-    let paletteColour = $_p.floor($_p.random(palette.length));
+    // let paletteColour = $_p.floor($_p.random(palette.length));
 
+if($_p.frameCount % 20 == 0){
+  paletteColour = palette[$_p.floor($_p.random(palette.length))];
+}
     
-    $_p.fill(palette[paletteColour]);
-    $_p.ellipse($_p.mouseX, $_p.mouseY, 10, 10);
+    $_p.fill(paletteColour);
+    $_p.ellipse($_p.width-$_p.mouseX, $_p.height-$_p.mouseY, 10, 10);
   };
 
 };

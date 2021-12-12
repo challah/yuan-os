@@ -472,6 +472,15 @@ ul.tree-view details[open] > summary:before {
   min-height: 50px;
 }
 
+@media screen and (max-width: 600px) {
+  body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .read-more > a {
   text-decoration: none;
   color: #010101;
