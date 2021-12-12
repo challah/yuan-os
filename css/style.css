@@ -389,7 +389,7 @@ ul.tree-view details[open] > summary:before {
   position: fixed;
   bottom: 2px;
   left: 2px;
-  background-color: #3498db;
+  background-color: #ff7700;
   color: white;
   padding: 0;
   font-size: 16px;
